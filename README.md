@@ -28,5 +28,5 @@ across Physics, Computer Science, and Mathematics.
 Clone the repo and navigate to any project:
 
 ```bash
-git clone https://github.com/shyamal/academic-portfolio.git
+git clone https://github.com/kavishkashyamal/academic-portfolio.git
 cd academic-portfolio/physics/blackbody-radiation
