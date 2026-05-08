@@ -7,11 +7,11 @@ across Physics, Computer Science, and Mathematics.
 
 ## 📁 Structure
 
-| Folder | Description |
-|--------|-------------|
-| `physics/` | Simulations and plots (blackbody radiation, wave optics, etc.) |
-| `cs/` | Algorithms, architecture projects, data structures |
-| `math/` | Numerical methods, visualizations |
+| Folder | Subfolder | Description |
+|--------|-----------|-------------|
+| `physics/` | `black_body_radiation/` | Simulations and plots — each subfolder includes a local README and project-specific requirements |
+| `cs/` |  | Algorithms, architecture projects, data structures |
+| `math/` |  | Numerical methods, visualizations |
 
 ---
 
@@ -19,7 +19,6 @@ across Physics, Computer Science, and Mathematics.
 
 - Python, NumPy, Matplotlib
 - Jupyter Notebooks
-- C / C++
 
 ---
 
