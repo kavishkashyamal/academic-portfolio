@@ -59,4 +59,4 @@ while True:
         print(f"The answer for the determinat is {solve()}.")
 
     else:
-        print("Nothing")
+        print("Nothing ")
