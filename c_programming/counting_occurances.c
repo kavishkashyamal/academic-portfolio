@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void countOccurrences(int arr[], int len, int target);
+int countOccurrences(int arr[], int len, int target);
 
 int main() {
 
@@ -12,12 +12,13 @@ int main() {
     printf("Enter your number : ");
     scanf("%d", &target);
 
-    countOccurrences(arr, len, target);
+    printf("%d occurs %d times.",
+       target, countOccurrences(arr, len, target));
 
     return 0;
 }
 
-void countOccurrences(int arr[], int len, int target){
+int countOccurrences(int arr[], int len, int target){
     int temp=0;
     int i;
 
@@ -25,5 +26,5 @@ void countOccurrences(int arr[], int len, int target){
         if (target==arr[i]){
             temp++;
         }
-    } printf("%d", temp);
+    } return temp;
 }
