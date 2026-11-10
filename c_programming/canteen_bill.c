@@ -26,7 +26,7 @@ int canteenBill(void){
 
         if (input<=0){
             printf("Invalid input");
-            break;
+            continue;
         } else {
 
             switch (input) {
@@ -35,8 +35,12 @@ int canteenBill(void){
                     printf("Your choice is Rice and Curry\n");
                     printf("Enter quantity : ");
                     scanf("%d", &quantity);
-
-                    balance = balance + (450*quantity);
+                    if (quantity>0){
+                        balance = balance + (450*quantity);
+                    } else {
+                        printf("Invalid input");
+                        continue;
+                    }
                     break;
 
                 case 2:
@@ -44,7 +48,12 @@ int canteenBill(void){
                     printf("Enter quantity : ");
                     scanf("%d", &quantity);
 
-                    balance = balance + (650*quantity);
+                    if (quantity>0){
+                        balance = balance + (650*quantity);
+                    } else {
+                        printf("Invalid input");
+                        continue;
+                    }
                     break;
 
                 case 3:
@@ -52,7 +61,12 @@ int canteenBill(void){
                     printf("Enter quantity : ");
                     scanf("%d", &quantity);
 
-                    balance = balance + (350*quantity);
+                    if (quantity>0){
+                        balance = balance + (350*quantity);
+                    } else {
+                        printf("Invalid input");
+                        continue;
+                    }
                     break;
 
                 case 4:
@@ -60,11 +74,18 @@ int canteenBill(void){
                     printf("Enter quantity : ");
                     scanf("%d", &quantity);
 
-                    balance = balance + (200*quantity);
+                    if (quantity>0){
+                        balance = balance + (200*quantity);
+                    } else {
+                        printf("Invalid input");
+                        continue;
+                    }
                     break;
 
                 case 5:
-                    printf("Total bill: %d\n", balance);
+                    printf("\n============================\n");
+                    printf("Final bill: Rs. %d\n", balance);
+                    printf("Thank you for visiting!\n");
                     return 0;
 
                 default :
@@ -73,7 +94,5 @@ int canteenBill(void){
             }
         }
     } 
-    printf("\n============================\n");
-    printf("Final bill: Rs. %d\n", balance);
-    printf("Thank you for visiting!\n");
+
 }
